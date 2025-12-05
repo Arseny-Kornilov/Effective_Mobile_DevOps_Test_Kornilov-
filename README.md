@@ -38,6 +38,6 @@ After=network.target
 
 [Service]
 Type=oneshot
-ExecStart=/usr/local/bin/monitor_test.sh
+ExecStart=/usr/local/bin/test.sh
 User=root
 ```
