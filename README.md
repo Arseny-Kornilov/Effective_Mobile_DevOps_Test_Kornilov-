@@ -45,7 +45,7 @@ User=root
 ## Таймер systemd (для пункта 2 в задании)
 ```
 [Unit]
-Description=Run test process every minute
+Description=Run test process monitoring every minute
 
 [Timer]
 OnBootSec=1min
