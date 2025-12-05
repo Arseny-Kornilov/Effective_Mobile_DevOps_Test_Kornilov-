@@ -29,3 +29,15 @@ else
     rm -f /tmp/test_running 2>/dev/null
 fi
 ```
+
+## Юнит systemd
+```
+[Unit]
+Description=Monitoring for test process
+After=network.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/monitor_test.sh
+User=root
+```
