@@ -1,6 +1,6 @@
 # Effective Mobile DevOps Тестовое задание
 ## Cкрипт 
-`
+```
 #!/bin/bash
 
 # Проверка, что процесс запущен
@@ -27,4 +27,4 @@ if pgrep -x "test" > /dev/null; then
 else
     # Процесс не запущен
     rm -f /tmp/test_running 2>/dev/null
-fi`
+fi```
