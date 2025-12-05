@@ -41,3 +41,16 @@ Type=oneshot
 ExecStart=/usr/local/bin/test.sh
 User=root
 ```
+
+## Таймер systemd (для пункта 2 в задании)
+```
+[Unit]
+Description=Run test process every minute
+
+[Timer]
+OnBootSec=1min
+OnUnitActiveSec=1min
+
+[Install]
+WantedBy=timers.target
+```
