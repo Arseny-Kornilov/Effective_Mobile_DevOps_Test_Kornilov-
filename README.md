@@ -2,7 +2,7 @@
 ## Cкрипт 
 
 #!/bin/bash
-#Проверка, что процесс запущен
+###Проверка, что процесс запущен
 if pgrep -x "test" > /dev/null; then
 
     if [ -f /tmp/test_running ]; then
@@ -24,6 +24,6 @@ if pgrep -x "test" > /dev/null; then
         echo "[$(date '+%Y-%m-%d %H:%M:%S')] Сервер мониторинга недоступен" >> /var/log/monitoring.log
     fi
 else
-    #Процесс не запущен
+    ###Процесс не запущен
     rm -f /tmp/test_running 2>/dev/null
 fi
